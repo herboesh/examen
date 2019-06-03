@@ -1,0 +1,27 @@
+﻿<Window x:Class="Opvolging.KeuzeDSLKLN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="KeuzeDSLKLN" Height="257.769" Width="633.562"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid x:Name="LK" Margin="0,0,-6.6,-0.2">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFCFAFA" Offset="0"/>
+                <GradientStop Color="#FF3479A9" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Intellisense" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="53" Width="183" FontWeight="Bold" FontStyle="Italic" FontSize="30"/>
+        <Label Content="Keuze scherm, Leerkrachten" HorizontalAlignment="Left" Margin="174,84,0,0" VerticalAlignment="Top" Width="291" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Ingave punten" HorizontalAlignment="Left" Margin="87,174,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Opvragen punten" HorizontalAlignment="Left" Margin="365,174,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="LKingaveVolgende" Content="Volgende" HorizontalAlignment="Left" Margin="233,176,0,0" VerticalAlignment="Top" Width="98" Height="27" FontWeight="Bold" Click="LKingaveVolgende_Click" />
+        <Button x:Name="LKopvragenVolgende" Content="Volgende" HorizontalAlignment="Left" Margin="518,177,0,0" VerticalAlignment="Top" Width="94" Height="26" FontWeight="Bold" Click="LKopvragenVolgende_Click"/>
+        <Label Content="Test maken" HorizontalAlignment="Left" Margin="87,135,0,0" VerticalAlignment="Top" Width="106" FontWeight="Bold" Height="34" FontSize="14"/>
+        <Button Content="Volgende" HorizontalAlignment="Left" Margin="233,135,0,0" VerticalAlignment="Top" Width="98" Height="26" Click="Button_Click"/>
+
+    </Grid>
+</Window>

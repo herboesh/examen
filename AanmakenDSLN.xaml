@@ -1,0 +1,42 @@
+﻿<Window x:Class="Opvolging.AanmaakDSLN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Opvolging"
+        mc:Ignorable="d"
+        Title="AanmaakDSLN" Height="450" Width="755.308"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFCFAFA" Offset="0"/>
+                <GradientStop Color="#FF3479A9" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Intellisense" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="59" Width="187" FontWeight="Bold" FontStyle="Italic" FontSize="30"/>
+        <Label Content="Aanmaken leerling" HorizontalAlignment="Left" Margin="272,70,0,0" VerticalAlignment="Top" Height="39" Width="193" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Naam" HorizontalAlignment="Left" Margin="32,114,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Geslacht" HorizontalAlignment="Left" Margin="32,174,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Geboortedatum" HorizontalAlignment="Left" Margin="32,242,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Rijksregister nr" HorizontalAlignment="Left" Margin="380,114,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Adres" HorizontalAlignment="Left" Margin="380,174,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Telefoon" HorizontalAlignment="Left" Margin="380,245,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Klas" HorizontalAlignment="Left" Margin="380,313,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="1.536,0.724"/>
+        <TextBox x:Name="NaamLN" HorizontalAlignment="Left" Height="28" Margin="197,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="RrLN" HorizontalAlignment="Left" Height="29" Margin="511,114,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="183"/>
+        <TextBox x:Name="AdresLN" HorizontalAlignment="Left" Height="29" Margin="511,174,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="183"/>
+        <TextBox x:Name="TelLN" HorizontalAlignment="Left" Height="29" Margin="511,245,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="183"/>
+        <ComboBox x:Name="GeslachtLN" HorizontalAlignment="Left" Margin="197,174,0,0" VerticalAlignment="Top" Width="120" Height="29">
+            <ComboBoxItem Content="Man" HorizontalAlignment="Left" Width="118.4"/>
+            <ComboBoxItem Content="Vrouw" HorizontalAlignment="Left" Width="118.4"/>
+        </ComboBox>
+        <ComboBox x:Name="KlasLN" HorizontalAlignment="Left" Margin="511,319,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="GdLN" HorizontalAlignment="Left" Margin="197,245,0,0" VerticalAlignment="Top" Height="29" Width="153"/>
+        <Button x:Name="AanmakenLN" Content="Aanmaken" HorizontalAlignment="Left" Margin="380,365,0,0" VerticalAlignment="Top" Width="93" Height="28" FontWeight="Bold" Click="AanmakenLN_Click"/>
+        <Label Content="Opmerkingen" HorizontalAlignment="Left" Margin="32,313,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="OpmerkingenLN" HorizontalAlignment="Left" Height="91" Margin="154,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+        <Button x:Name="TerugkerenLN" Content="Terugkeren" HorizontalAlignment="Left" Margin="511,364,0,0" VerticalAlignment="Top" Width="102" Height="29" FontWeight="Bold" Click="TerugkerenLN_Click"/>
+    </Grid>
+</Window>
